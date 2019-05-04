@@ -2,9 +2,11 @@ package com.sourceartists.auction.model;
 
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.ManyToMany;
 import javax.persistence.OneToMany;
 import java.math.BigDecimal;
 import java.util.List;
+import java.util.Set;
 
 public class Auction {
 
@@ -19,6 +21,15 @@ public class Auction {
 
     @OneToMany(mappedBy = "auction")
     private List<Bid> bids;
+
+    @ManyToMany(mappedBy = "watchedAuctions")
+    private Set<Buyer> watchers;
+
+    public Auction(){}
+
+    public Auction(Integer id){
+        this.id = id;
+    }
 
     public Integer getId() {
         return id;
