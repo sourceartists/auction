@@ -2,7 +2,6 @@ package com.sourceartists.auction.model;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.math.BigDecimal;
 import java.util.List;
 
 @Entity
@@ -17,6 +16,7 @@ public class Buyer implements Serializable {
 
     @ManyToMany
     private List<Auction> watchedAuctions;
+    private Integer creditScore;
 
     public Buyer(){
 
@@ -56,5 +56,13 @@ public class Buyer implements Serializable {
 
     public void setWatchedAuctions(List<Auction> watchedAuctions) {
         this.watchedAuctions = watchedAuctions;
+    }
+
+    public boolean hasInsuranceForAuction(Auction auction) {
+        return false;
+    }
+
+    public Integer getCreditScore() {
+        return creditScore;
     }
 }

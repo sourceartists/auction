@@ -2,21 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b55128c7-7735-40e8-9f5a-c53f1cb778b0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sourceartists/auction/exception/WatchingException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sourceartists/auction/model/Buyer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sourceartists/auction/model/Rating.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sourceartists/auction/model/Seller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sourceartists/auction/repository/BuyerRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sourceartists/auction/repository/SellerRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sourceartists/auction/service/MailService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sourceartists/auction/service/impl/BasicMailService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sourceartists/auction/util/RatingUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/sourceartists/auction/service/impl/BasicAuctionServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sourceartists/auction/model/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sourceartists/auction/model/Insurance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sourceartists/auction/service/helper/InsuranceCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sourceartists/auction/service/helper/PopularityResolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/sourceartists/auction/service/impl/junit4/BasicAuctionServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sourceartists/auction/model/Auction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sourceartists/auction/model/Auction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sourceartists/auction/model/Buyer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sourceartists/auction/model/Buyer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sourceartists/auction/repository/AuctionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sourceartists/auction/repository/AuctionRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sourceartists/auction/service/AuctionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sourceartists/auction/service/AuctionService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sourceartists/auction/service/impl/BasicAuctionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sourceartists/auction/service/impl/BasicAuctionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sourceartists/auction/service/impl/BasicLoggingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sourceartists/auction/service/impl/BasicLoggingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/sourceartists/auction/service/impl/BasicAuctionServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sourceartists/auction/service/impl/BasicAuctionServiceTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -27,39 +26,15 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/sourceartists/auction/service/impl/BasicAuctionService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="421">
-              <caret line="82" column="26" selection-start-line="82" selection-start-column="26" selection-end-line="82" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2824#2825#0" expanded="true" />
-                <element signature="e#2883#2884#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sourceartists/auction/service/MailService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="81" selection-start-line="5" selection-start-column="81" selection-end-line="5" selection-end-column="81" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sourceartists/auction/service/impl/BasicMailService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="1971">
+              <caret line="153" column="5" lean-forward="true" selection-start-line="153" selection-start-column="5" selection-end-line="153" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -68,46 +43,77 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sourceartists/auction/repository/BuyerRepository.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sourceartists/auction/service/helper/PopularityResolver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="8" column="60" selection-start-line="8" selection-start-column="60" selection-end-line="8" selection-end-column="60" />
+            <state relative-caret-position="102">
+              <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sourceartists/auction/model/Buyer.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sourceartists/auction/service/helper/InsuranceCalculator.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="374">
-              <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+              <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="20" />
               <folding>
-                <element signature="e#460#461#0" expanded="true" />
-                <element signature="e#488#489#0" expanded="true" />
-                <element signature="e#445#446#0" expanded="true" />
-                <element signature="e#493#494#0" expanded="true" />
-                <element signature="e#372#373#0" expanded="true" />
-                <element signature="e#397#398#0" expanded="true" />
-                <element signature="e#434#435#0" expanded="true" />
-                <element signature="e#462#463#0" expanded="true" />
-                <element signature="e#493#494#0" expanded="true" />
-                <element signature="e#520#521#0" expanded="true" />
-                <element signature="e#560#561#0" expanded="true" />
-                <element signature="e#592#593#0" expanded="true" />
-                <element signature="e#641#642#0" expanded="true" />
-                <element signature="e#679#680#0" expanded="true" />
-                <element signature="e#748#749#0" expanded="true" />
-                <element signature="e#802#803#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#657#658#0" expanded="true" />
+                <element signature="e#684#685#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sourceartists/auction/repository/AuctionRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="81" selection-start-line="12" selection-start-column="81" selection-end-line="12" selection-end-column="81" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="89" column="44" selection-start-line="89" selection-start-column="44" selection-end-line="89" selection-end-column="44" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/sourceartists/auction/service/impl/junit4/BasicAuctionServiceTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="248">
+              <caret line="166" column="84" lean-forward="true" selection-start-line="166" selection-start-column="84" selection-end-line="166" selection-end-column="84" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1019#1020#0" expanded="true" />
+                <element signature="e#1045#1046#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/sourceartists/auction/service/impl/BasicAuctionServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="49" lean-forward="true" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
+            <state relative-caret-position="849">
+              <caret line="82" column="14" selection-start-line="82" selection-start-column="14" selection-end-line="82" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sourceartists/auction/model/Insurance.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -115,56 +121,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/sourceartists/auction/service/AuctionService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="340">
+              <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sourceartists/auction/util/RatingUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#397#398#0" expanded="true" />
-                <element signature="e#418#419#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sourceartists/auction/model/Auction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#648#649#0" expanded="true" />
-                <element signature="e#676#677#0" expanded="true" />
-                <element signature="e#421#422#0" expanded="true" />
-                <element signature="e#446#447#0" expanded="true" />
-                <element signature="e#483#484#0" expanded="true" />
-                <element signature="e#511#512#0" expanded="true" />
-                <element signature="e#543#544#0" expanded="true" />
-                <element signature="e#571#572#0" expanded="true" />
-                <element signature="e#613#614#0" expanded="true" />
-                <element signature="e#647#648#0" expanded="true" />
-                <element signature="e#685#686#0" expanded="true" />
-                <element signature="e#719#720#0" expanded="true" />
-                <element signature="e#773#774#0" expanded="true" />
-                <element signature="e#819#820#0" expanded="true" />
-                <element signature="e#872#873#0" expanded="true" />
-                <element signature="e#917#918#0" expanded="true" />
-                <element signature="e#1099#1100#0" expanded="true" />
-                <element signature="e#1126#1127#0" expanded="true" />
-                <element signature="e#1169#1170#0" expanded="true" />
-                <element signature="e#1201#1202#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -181,6 +141,13 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>bidOnAuction</find>
+      <find>rateSeller</find>
+      <find>watchAnOffer</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -188,10 +155,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/com/sourceartists/bid/resource/BidResource.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/sourceartists/auction/exception/AuctionLockedException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sourceartists/auction/service/impl/BasicLoggingService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sourceartists/auction/repository/AuctionRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sourceartists/auction/repository/BidRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sourceartists/auction/model/Bid.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sourceartists/auction/service/helper/BidSaver.java" />
@@ -200,15 +164,24 @@
         <option value="$PROJECT_DIR$/src/main/java/com/sourceartists/auction/model/Rating.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sourceartists/auction/model/Seller.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sourceartists/auction/util/RatingUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sourceartists/auction/service/AuctionService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sourceartists/auction/repository/BuyerRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sourceartists/auction/service/MailService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sourceartists/auction/service/impl/BasicMailService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sourceartists/auction/model/Auction.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sourceartists/auction/service/impl/BasicAuctionService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sourceartists/auction/exception/WatchingException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sourceartists/auction/service/impl/BasicLoggingService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sourceartists/auction/model/Insurance.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sourceartists/auction/model/Buyer.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sourceartists/auction/model/Auction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sourceartists/auction/model/Category.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sourceartists/auction/service/AuctionService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sourceartists/auction/service/helper/InsuranceCalculator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sourceartists/auction/repository/AuctionRepository.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/sourceartists/auction/service/impl/BasicAuctionServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sourceartists/auction/service/helper/PopularityResolver.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sourceartists/auction/service/helper/CategoryUtilities.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sourceartists/auction/service/impl/BasicAuctionService.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/sourceartists/auction/service/impl/junit4/BasicAuctionServiceTest.java" />
       </list>
     </option>
   </component>
@@ -220,10 +193,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="289" />
-    <option name="y" value="547" />
-    <option name="width" value="1946" />
-    <option name="height" value="1106" />
+    <option name="x" value="-11" />
+    <option name="y" value="-11" />
+    <option name="width" value="2582" />
+    <option name="height" value="1403" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -232,7 +205,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -282,7 +254,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="auction" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
+              <item name="resource" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bid" type="b2602c69:ProjectViewProjectNode" />
@@ -337,6 +309,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -347,19 +320,22 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.sourceartists.auction.service.impl" />
     </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.sourceartists.auction.repository" />
       <recent name="com.sourceartists.auction.model" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.sourceartists.auction.service.helper" />
+      <recent name="com.sourceartists.auction.model" />
       <recent name="com.sourceartists.auction.exception" />
     </key>
   </component>
@@ -375,6 +351,97 @@
       </list>
     </option>
   </component>
+  <component name="RunManager" selected="JUnit.BasicAuctionServiceTest.shouldFailBidOnAuction_whenToManyAttempts">
+    <configuration name="BasicAuctionServiceTest.shouldCalculateInsuranceForBuyer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bid" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sourceartists.auction.service.impl.junit4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sourceartists.auction.service.impl.junit4" />
+      <option name="MAIN_CLASS_NAME" value="com.sourceartists.auction.service.impl.junit4.BasicAuctionServiceTest" />
+      <option name="METHOD_NAME" value="shouldCalculateInsuranceForBuyer" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BasicAuctionServiceTest.shouldCalculateInsurancePerCategory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bid" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sourceartists.auction.service.impl.junit4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sourceartists.auction.service.impl.junit4" />
+      <option name="MAIN_CLASS_NAME" value="com.sourceartists.auction.service.impl.junit4.BasicAuctionServiceTest" />
+      <option name="METHOD_NAME" value="shouldCalculateInsurancePerCategory" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BasicAuctionServiceTest.shouldFailBidOnAuction_whenToManyAttempts" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bid" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sourceartists.auction.service.impl.junit4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sourceartists.auction.service.impl.junit4" />
+      <option name="MAIN_CLASS_NAME" value="com.sourceartists.auction.service.impl.junit4.BasicAuctionServiceTest" />
+      <option name="METHOD_NAME" value="shouldFailBidOnAuction_whenToManyAttempts" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BasicAuctionServiceTest.shouldGetMostPopularAuctionsFromCategory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bid" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sourceartists.auction.service.impl.junit4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sourceartists.auction.service.impl.junit4" />
+      <option name="MAIN_CLASS_NAME" value="com.sourceartists.auction.service.impl.junit4.BasicAuctionServiceTest" />
+      <option name="METHOD_NAME" value="shouldGetMostPopularAuctionsFromCategory" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BasicAuctionServiceTest.shouldRetryBidOnAuction" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bid" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sourceartists.auction.service.impl.junit4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sourceartists.auction.service.impl.junit4" />
+      <option name="MAIN_CLASS_NAME" value="com.sourceartists.auction.service.impl.junit4.BasicAuctionServiceTest" />
+      <option name="METHOD_NAME" value="shouldRetryBidOnAuction" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.BasicAuctionServiceTest.shouldFailBidOnAuction_whenToManyAttempts" />
+        <item itemvalue="JUnit.BasicAuctionServiceTest.shouldRetryBidOnAuction" />
+        <item itemvalue="JUnit.BasicAuctionServiceTest.shouldGetMostPopularAuctionsFromCategory" />
+        <item itemvalue="JUnit.BasicAuctionServiceTest.shouldCalculateInsurancePerCategory" />
+        <item itemvalue="JUnit.BasicAuctionServiceTest.shouldCalculateInsuranceForBuyer" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -385,57 +452,142 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1556824653588</updated>
-      <workItem from="1556824656956" duration="16254000" />
+      <workItem from="1556824656956" duration="17204000" />
+      <workItem from="1558008221546" duration="30000" />
+      <workItem from="1559884865666" duration="35000" />
+      <workItem from="1559970745442" duration="27083000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="BasicAuctionServiceTest_shouldCalculateInsurancePerCategory - 2019.06.08 at 09h 13m 07s.xml">
+      <configuration name="BasicAuctionServiceTest.shouldCalculateInsurancePerCategory" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BasicAuctionServiceTest_shouldGetMostPopularAuctionsFromCategory - 2019.06.09 at 11h 38m 32s.xml">
+      <configuration name="BasicAuctionServiceTest.shouldGetMostPopularAuctionsFromCategory" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BasicAuctionServiceTest_shouldGetMostPopularAuctionsFromCategory - 2019.06.09 at 11h 39m 32s.xml">
+      <configuration name="BasicAuctionServiceTest.shouldGetMostPopularAuctionsFromCategory" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BasicAuctionServiceTest_shouldGetMostPopularAuctionsFromCategory - 2019.06.09 at 11h 43m 13s.xml">
+      <configuration name="BasicAuctionServiceTest.shouldGetMostPopularAuctionsFromCategory" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BasicAuctionServiceTest_shouldGetMostPopularAuctionsFromCategory - 2019.06.09 at 11h 43m 45s.xml">
+      <configuration name="BasicAuctionServiceTest.shouldGetMostPopularAuctionsFromCategory" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BasicAuctionServiceTest_shouldRetryBidOnAuction - 2019.06.11 at 06h 01m 20s.xml">
+      <configuration name="BasicAuctionServiceTest.shouldRetryBidOnAuction" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BasicAuctionServiceTest_shouldRetryBidOnAuction - 2019.06.11 at 06h 05m 44s.xml">
+      <configuration name="BasicAuctionServiceTest.shouldRetryBidOnAuction" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BasicAuctionServiceTest_shouldRetryBidOnAuction - 2019.06.11 at 06h 06m 07s.xml">
+      <configuration name="BasicAuctionServiceTest.shouldRetryBidOnAuction" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BasicAuctionServiceTest_shouldFailBidOnAuction_whenToManyAttempts - 2019.06.12 at 07h 05m 59s.xml">
+      <configuration name="BasicAuctionServiceTest.shouldFailBidOnAuction_whenToManyAttempts" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BasicAuctionServiceTest_shouldFailBidOnAuction_whenToManyAttempts - 2019.06.12 at 07h 20m 42s.xml">
+      <configuration name="BasicAuctionServiceTest.shouldFailBidOnAuction_whenToManyAttempts" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16254000" />
+    <option name="totallyTimeSpent" value="44352000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1721" height="935" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Web" side_tool="true" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info id="Designer" />
-      <window_info id="Learn" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28236002" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28236002" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Java Enterprise" />
-      <window_info anchor="bottom" id="Spring" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" />
+      <window_info id="Web" order="2" side_tool="true" />
+      <window_info id="Designer" order="3" />
+      <window_info id="Learn" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32876712" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39975095" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Bean Validation" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Spring" order="9" />
+      <window_info anchor="bottom" id="Database Changes" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Bean Validation" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/sourceartists/auction/service/impl/junit4/BasicAuctionServiceTest.java</url>
+          <line>76</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/sourceartists/auction/service/impl/BasicAuctionService.java</url>
+          <line>104</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/sourceartists/auction/service/impl/BasicAuctionService.java</url>
+          <line>111</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/sourceartists/auction/service/impl/junit4/BasicAuctionServiceTest.java</url>
+          <line>109</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/sourceartists/auction/service/impl/BasicAuctionService.java</url>
+          <line>119</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/sourceartists/auction/service/impl/BasicAuctionService.java</url>
+          <line>47</line>
+          <properties />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>auction.getProductWorth()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>buyer.getCreditScore()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sourceartists/auction/resource/BidResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sourceartists/auction/exception/AuctionLockedException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -443,30 +595,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sourceartists/auction/repository/AuctionRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="69" lean-forward="true" selection-start-line="7" selection-start-column="69" selection-end-line="7" selection-end-column="69" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sourceartists/auction/repository/BidRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="65" selection-start-line="7" selection-start-column="65" selection-end-line="7" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sourceartists/auction/service/impl/BasicLoggingService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -491,13 +623,6 @@
             <element signature="e#740#741#0" expanded="true" />
             <element signature="e#778#779#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sourceartists/auction/service/LoggingService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="46" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
         </state>
       </provider>
     </entry>
@@ -573,39 +698,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sourceartists/auction/util/RatingUtils.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sourceartists/auction/exception/WatchingException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#397#398#0" expanded="true" />
-            <element signature="e#418#419#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-289">
-          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sourceartists/auction/service/AuctionService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sourceartists/auction/repository/BuyerRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="8" column="60" selection-start-line="8" selection-start-column="60" selection-end-line="8" selection-end-column="60" />
+        <state relative-caret-position="34">
+          <caret line="2" column="48" selection-start-line="2" selection-start-column="48" selection-end-line="2" selection-end-column="48" />
         </state>
       </provider>
     </entry>
@@ -613,6 +709,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="81" selection-start-line="5" selection-start-column="81" selection-end-line="5" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sourceartists/auction/util/RatingUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -626,84 +732,167 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sourceartists/auction/model/Auction.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sourceartists/auction/service/LoggingService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+        <state relative-caret-position="102">
+          <caret line="6" column="46" lean-forward="true" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sourceartists/auction/service/impl/BasicLoggingService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="53" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#648#649#0" expanded="true" />
-            <element signature="e#676#677#0" expanded="true" />
-            <element signature="e#421#422#0" expanded="true" />
-            <element signature="e#446#447#0" expanded="true" />
-            <element signature="e#483#484#0" expanded="true" />
-            <element signature="e#511#512#0" expanded="true" />
-            <element signature="e#543#544#0" expanded="true" />
-            <element signature="e#571#572#0" expanded="true" />
-            <element signature="e#613#614#0" expanded="true" />
-            <element signature="e#647#648#0" expanded="true" />
-            <element signature="e#685#686#0" expanded="true" />
-            <element signature="e#719#720#0" expanded="true" />
-            <element signature="e#773#774#0" expanded="true" />
-            <element signature="e#819#820#0" expanded="true" />
-            <element signature="e#872#873#0" expanded="true" />
-            <element signature="e#917#918#0" expanded="true" />
-            <element signature="e#1099#1100#0" expanded="true" />
-            <element signature="e#1126#1127#0" expanded="true" />
-            <element signature="e#1169#1170#0" expanded="true" />
-            <element signature="e#1201#1202#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sourceartists/auction/exception/WatchingException.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sourceartists/auction/repository/BuyerRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="8" column="60" selection-start-line="8" selection-start-column="60" selection-end-line="8" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sourceartists/auction/model/Insurance.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="2" column="48" selection-start-line="2" selection-start-column="48" selection-end-line="2" selection-end-column="48" />
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sourceartists/auction/service/impl/BasicAuctionService.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/assertj/assertj-core/3.12.2/assertj-core-3.12.2-sources.jar!/org/assertj/core/api/Assertions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="82" column="26" selection-start-line="82" selection-start-column="26" selection-end-line="82" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2824#2825#0" expanded="true" />
-            <element signature="e#2883#2884#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="17">
+          <caret line="12" column="28" selection-start-line="12" selection-end-line="12" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sourceartists/auction/model/Buyer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+        <state relative-caret-position="196">
+          <caret line="61" column="19" selection-start-line="61" selection-start-column="19" selection-end-line="61" selection-end-column="19" />
           <folding>
-            <element signature="e#460#461#0" expanded="true" />
-            <element signature="e#488#489#0" expanded="true" />
-            <element signature="e#445#446#0" expanded="true" />
-            <element signature="e#493#494#0" expanded="true" />
-            <element signature="e#372#373#0" expanded="true" />
-            <element signature="e#397#398#0" expanded="true" />
-            <element signature="e#434#435#0" expanded="true" />
-            <element signature="e#462#463#0" expanded="true" />
-            <element signature="e#493#494#0" expanded="true" />
-            <element signature="e#520#521#0" expanded="true" />
-            <element signature="e#560#561#0" expanded="true" />
-            <element signature="e#592#593#0" expanded="true" />
-            <element signature="e#641#642#0" expanded="true" />
-            <element signature="e#679#680#0" expanded="true" />
-            <element signature="e#748#749#0" expanded="true" />
-            <element signature="e#802#803#0" expanded="true" />
+            <element signature="e#1257#1258#0" expanded="true" />
+            <element signature="e#1285#1286#0" expanded="true" />
+            <element signature="e#1324#1325#0" expanded="true" />
+            <element signature="e#1351#1352#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/powermock/powermock-core/2.0.2/powermock-core-2.0.2.jar!/org/powermock/core/MockGateway.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sourceartists/auction/model/Category.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sourceartists/auction/model/Auction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="78" column="15" selection-start-line="78" selection-start-column="15" selection-end-line="78" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1521#1522#0" expanded="true" />
+            <element signature="e#1548#1549#0" expanded="true" />
+            <element signature="e#1634#1635#0" expanded="true" />
+            <element signature="e#1661#1662#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="89" column="44" selection-start-line="89" selection-start-column="44" selection-end-line="89" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sourceartists/auction/service/AuctionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sourceartists/auction/service/helper/InsuranceCalculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#657#658#0" expanded="true" />
+            <element signature="e#684#685#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sourceartists/auction/repository/AuctionRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="81" selection-start-line="12" selection-start-column="81" selection-end-line="12" selection-end-column="81" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sourceartists/auction/service/helper/PopularityResolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sourceartists/auction/service/helper/CategoryUtilities.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sourceartists/auction/resource/BidResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/sourceartists/auction/service/impl/BasicAuctionServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="49" lean-forward="true" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
+        <state relative-caret-position="849">
+          <caret line="82" column="14" selection-start-line="82" selection-start-column="14" selection-end-line="82" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sourceartists/auction/service/impl/BasicAuctionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1971">
+          <caret line="153" column="5" lean-forward="true" selection-start-line="153" selection-start-column="5" selection-end-line="153" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/sourceartists/auction/service/impl/junit4/BasicAuctionServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="166" column="84" lean-forward="true" selection-start-line="166" selection-start-column="84" selection-end-line="166" selection-end-column="84" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1019#1020#0" expanded="true" />
+            <element signature="e#1045#1046#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

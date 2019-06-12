@@ -10,6 +10,8 @@ import com.sourceartists.auction.service.AuctionService;
 import com.sourceartists.auction.service.LoggingService;
 import com.sourceartists.auction.service.MailService;
 import com.sourceartists.auction.service.helper.BidSaver;
+import com.sourceartists.auction.service.helper.InsuranceCalculator;
+import com.sourceartists.auction.service.helper.PopularityResolver;
 import com.sourceartists.auction.util.RatingUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -22,6 +24,10 @@ import java.util.List;
 public class BasicAuctionService implements AuctionService {
 
     public static final int MAX_NUMBER_OF_WATCHED_AUCTIONS = 4;
+    public static final Integer WAIT_MILIS = Integer.valueOf(3000);
+    private static final Integer MOST_POPULAR_CAP = 10;
+    private static final Integer MAX_BID_ATTEMPTS = Integer.valueOf(3);
+
     @Autowired
     private BidSaver bidSaver;
     @Autowired
@@ -35,7 +41,8 @@ public class BasicAuctionService implements AuctionService {
     @Autowired
     private MailService mailService;
 
-    private static final Integer MAX_BID_ATTEMPTS = Integer.valueOf(5);
+    @Autowired
+    private PopularityResolver popularityResolver;
 
     public boolean bidOnAuction(Integer auctionId, Bid bid){
         Integer attemptCount = Integer.valueOf(0);
@@ -50,7 +57,7 @@ public class BasicAuctionService implements AuctionService {
                 attemptCount++;
             }
 
-            waitABit();
+            waitABit(WAIT_MILIS);
         }
 
         return bidSuccessfull;
@@ -93,9 +100,60 @@ public class BasicAuctionService implements AuctionService {
         return true;
     }
 
+    @Override
+    public Insurance offerInsurance(Integer auctionId, Integer buyerId) {
+        Buyer buyer = buyerRepository.findById(buyerId).get();
+        Auction auction = auctionRepository.findById(auctionId).get();
+
+        InsuranceCalculator insuranceCalculator = new InsuranceCalculator();
+
+        if(!buyer.hasInsuranceForAuction(auction)){
+            return insuranceCalculator.generateQuote(
+                    auction.getProductWorth(), buyer.getCreditScore());
+        }
+
+        return null;
+    }
+
+    @Override
+    public Insurance offerInsurancePerCategory(Integer auctionId, Integer buyerId) {
+        Buyer buyer = buyerRepository.findById(buyerId).get();
+        Auction auction = auctionRepository.findById(auctionId).get();
+
+        InsuranceCalculator insuranceCalculator
+                = new InsuranceCalculator(auction.getCategory(), buyer.getCreditScore());
+
+        if(!buyer.hasInsuranceForAuction(auction)){
+            return insuranceCalculator.generateQuote(auction.getProductWorth());
+        }
+
+        return null;
+    }
+
+    @Override
+    public List<Auction> getMostPopularAuctionsFromCategory(Integer categoryId) {
+        List<Auction> initialPopularAuctionCandidates = auctionRepository
+                .findByCategoryOrderByViewsDesc(categoryId, Integer.valueOf(20));
+
+        List<Auction> topAuctions = popularityResolver
+                .resolveWithCap(initialPopularAuctionCandidates, MOST_POPULAR_CAP);
+
+        return topAuctions;
+    }
+
     BigDecimal calculateRating(List<Rating> ratings){
         return RatingUtils.calculateRating(ratings);
     }
 
-    void waitABit(){}
+    void waitABit(Integer milis){
+        try {
+            Thread.sleep(milis);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void setPopularityResolver(PopularityResolver popularityResolver) {
+        this.popularityResolver = popularityResolver;
+    }
 }

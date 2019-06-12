@@ -9,10 +9,13 @@ import com.sourceartists.auction.repository.AuctionRepository;
 import com.sourceartists.auction.repository.BuyerRepository;
 import com.sourceartists.auction.repository.SellerRepository;
 import com.sourceartists.auction.service.MailService;
+import com.sourceartists.auction.service.helper.PopularityResolver;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
+import org.mockito.Mockito;
 import org.mockito.Spy;
+import org.powermock.api.mockito.PowerMockito;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
@@ -94,4 +97,6 @@ class BasicAuctionServiceTest {
         // Assert
         verifyZeroInteractions(mailService);
     }
+
+
 }

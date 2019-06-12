@@ -24,6 +24,7 @@ public class Auction {
 
     @ManyToMany(mappedBy = "watchedAuctions")
     private Set<Buyer> watchers;
+    private BigDecimal productWorth;
 
     public Auction(){}
 
@@ -69,5 +70,13 @@ public class Auction {
 
     public void setBids(List<Bid> bids) {
         this.bids = bids;
+    }
+
+    public BigDecimal getProductWorth() {
+        return productWorth;
+    }
+
+    public Category getCategory() {
+        return null;
     }
 }

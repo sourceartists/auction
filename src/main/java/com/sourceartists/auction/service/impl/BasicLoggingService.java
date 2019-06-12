@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 public class BasicLoggingService implements LoggingService {
 
     @Override
-    public void logBidUnsuccessfull(Auction auction, Bid bid) {
+    public void logBidUnsuccessfull(Integer auctionId, Bid bid) {
 
     }
 }
